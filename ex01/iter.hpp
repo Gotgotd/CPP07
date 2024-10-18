@@ -6,7 +6,7 @@
 /*   By: gdaignea <gdaignea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:58:09 by gdaignea          #+#    #+#             */
-/*   Updated: 2024/10/16 17:19:31 by gdaignea         ###   ########.fr       */
+/*   Updated: 2024/10/18 10:33:25 by gdaignea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	iter(T* array, int length, F function) {
 
 template<typename T>
 void	printSomething(T& thing) {
-	std::cout << thing << ", ";
+	std::cout << thing << "   ";
 }
 
 #endif

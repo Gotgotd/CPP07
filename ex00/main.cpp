@@ -6,7 +6,7 @@
 /*   By: gdaignea <gdaignea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 15:19:45 by gdaignea          #+#    #+#             */
-/*   Updated: 2024/10/17 15:06:45 by gdaignea         ###   ########.fr       */
+/*   Updated: 2024/10/18 10:26:03 by gdaignea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int main( void ) {
 	int a = 2;
 	int b = 3;
 
+	std::cout << "a = " << a << ", b = " << b << std::endl;
 	::swap( a, b );
 	
 	std::cout << "a = " << a << ", b = " << b << std::endl;

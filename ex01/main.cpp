@@ -6,24 +6,21 @@
 /*   By: gdaignea <gdaignea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:57:45 by gdaignea          #+#    #+#             */
-/*   Updated: 2024/10/17 15:11:26 by gdaignea         ###   ########.fr       */
+/*   Updated: 2024/10/18 10:35:56 by gdaignea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "iter.hpp"
 
-void	printNumber(int& nb) {
-	std::cout << nb << ", ";
-}
 
 int	main() {
 
-	int		intArray[5] = {1, 2, 3, 4, 5};
-	float	floatArray[5] = {42.02f, 12.02f, 54.03f, 47.52f, 89.23f};
+	int			intArray[5] = {1, 2, 3, 4, 5};
+	float		floatArray[5] = {42.02f, 12.02f, 54.03f, 47.52f, 89.23f};
 	std::string	strArray[3] = {"hello world", "bonjour le monde", "hola mundo"};
 	const char	*array = "hello world";
 
-	::iter(intArray, 5, printNumber);
+	::iter(intArray, 5, printSomething<int>);
 	std::cout << std::endl;
 	::iter(floatArray, 5, printSomething<float>);
 	std::cout << std::endl;
